@@ -1,6 +1,5 @@
 package org.dragonli.jpatools.store;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.dragonli.jpatools.IdEntity;
 
 import javax.persistence.*;
@@ -70,7 +69,6 @@ public abstract class AbstractEntity implements Serializable, IdEntity {
 	 * Entity version: increment when update.
 	 */
 	@Column(nullable = false)
-	@JsonIgnore
 	@Version
 	private Integer version;
 
